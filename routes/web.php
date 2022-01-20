@@ -37,4 +37,4 @@ Route::post('/login',[Sessions::class,'store'])
 -> name('login.store');
 
 Route::get('/logout',[Sessions::class,'destroy'])
--> name('login.destroy');
+-> name('login.destro');
