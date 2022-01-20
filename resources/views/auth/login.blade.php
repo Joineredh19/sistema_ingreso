@@ -24,7 +24,7 @@
 
   <body>
     <div class="wrapper">
-      <div class="logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1045px-Sena_Colombia_logo.svg.png" alt=""> </div>
+      <div class="logo"> <img src="../../public/img/logo.png" alt=""> </div>
       &nbsp&nbsp
       <div class="text-center mt-4 name"> Ingreso Admin </div>
       &nbsp&nbsp
