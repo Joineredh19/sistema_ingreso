@@ -24,7 +24,7 @@
 
   <body>
     <div class="wrapper">
-      <div class="logo"> <img src="../public/img/logo.png" alt=""> </div>
+      <div class="logo"> <img src="/img/logo.png" alt=""> </div>
       &nbsp&nbsp
       <div class="text-center mt-4 name"> Ingreso Admin </div>
       &nbsp&nbsp
