@@ -14,26 +14,26 @@
       <script src=" /js/jquery.mCustomScrollbar.concat.min.js " ></script>
       <script src=" /js/main.js" ></script>
   </head>
-  
+
   <body>
     <div class="wrapper">
-      <div class="logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1045px-Sena_Colombia_logo.svg.png" alt=""> </div>
+      <div>< img class="img-responsive" src="assets/images/logo.png"> </div>
       &nbsp&nbsp
       <div class="text-center mt-4 name"> Ingreso       Admin </div>
       &nbsp&nbsp
-      
+
       <form class="p-3 mt-3">
-          <div class="form-field d-flex align-items-center"> 
+          <div class="form-field d-flex align-items-center">
             <span class="far fa-user"></span>
             <input type="text" name="userName" id="userName" placeholder="Username">
           </div>
-          <div class="form-field d-flex align-items-center"> 
-            <span class="fas fa-key"></span> 
+          <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
             <input type="password" name="password" id="pwd" placeholder="Password">
           </div>
           <button class="btn mt-3">Login</button>
       </form>
-      
+
     </div>
   </body>
 </html>
