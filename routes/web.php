@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Register;
 use App\Http\Controllers\Sessions;
+use  App\Http\Controllers\PersonalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,13 @@ Route::get('/inicio', function () {
     return view('indexx');
 });
 
+Route::get('/personals', function () {
+    return view('personal.create');
+});
+
+Route::post('personals',[PersonalController::class,'create']);
+Route::resource('personals', PersonalController::class);
+
 
 Route::get('/register',[Register::class,'create'])
 -> name('register.index');
@@ -38,3 +46,5 @@ Route::post('/login',[Sessions::class,'store'])
 
 Route::get('/logout',[Sessions::class,'destroy'])
 -> name('login.destroy');
+
+
