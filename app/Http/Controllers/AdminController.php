@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Personals;
-class PersonalsController extends Controller
+
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,12 +13,7 @@ class PersonalsController extends Controller
      */
     public function index()
     {
-        //++
-
-        $datos['Personas']=Personals::all();
-        return view('admin.index',$datos);
-
-
+        //
     }
 
     /**
@@ -29,7 +24,6 @@ class PersonalsController extends Controller
     public function create()
     {
         //
-        return view('admin.create');
     }
 
     /**

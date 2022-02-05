@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Register;
 use App\Http\Controllers\Sessions;
-use  App\Http\Controllers\PersonalController;
+
 use  App\Http\Controllers\PersonalsController;
 
 /*
@@ -20,18 +20,18 @@ use  App\Http\Controllers\PersonalsController;
 Route::get('/', function () {
     return view('home');
 });
-
+/*
 Route::get('/inicio', function () {
     return view('admin.index');
-});
+});*/
 
 
-Route::get('/personals', function () {
-    return view('personal.create');
-});
 
-Route::post('personals',[PersonalsController::class,'create']);
-Route::resource('personals', PersonalsController::class);
+/*Route::get('/Inicio',[PersonalsController::class,'index'])
+-> name('admin.index');*/
+//Route::get('personals',[PersonalsController::class,'index']);
+//Route::post('personals',[PersonalsController::class,'create']);
+Route::resource('admin', PersonalsController::class);
 
 
 //Rutas Login y Registro
