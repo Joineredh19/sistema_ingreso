@@ -34,11 +34,11 @@
     <link href="css/theme.css" rel="stylesheet" media="all">
 
 </head>
-
+@yield('content')
 
 <body class="hold-transition skin-blue sidebar-mini">
 
-    @yield('content')
+
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->

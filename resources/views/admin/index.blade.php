@@ -225,7 +225,7 @@
                                 <h2 class="title-1">Ingreso</h2>
 
 
-                                    <a href="/admin/create" class="btn btn-primary">
+                                    <a href="{{route('admin.create')}}" class="btn btn-primary">
                                         <i class="zmdi zmdi-plus"> Añadir</i>
                                     </a>
 
@@ -382,8 +382,8 @@
                                             <td>{{$personal ->Cargo}}</td>
                                             <td>{{$personal ->created_at}}</td>
                                             <td>
-                                                <a class= "btn mt-3">Editar</a>
-                                                <button class="btn btn-danger">Editar<
+                                                <a class= "btn btn-primary">Editar</a>
+                                                <button class="btn btn-danger">Borrar</button>
                                             </td>
                                         </tr>
                                     @endforeach

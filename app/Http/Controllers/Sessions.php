@@ -19,7 +19,7 @@ class Sessions extends Controller
                 'messages'=>'El correo o la contraseña son invalidos',
             ]);
         }
-        return redirect()->to('/inicio');
+        return redirect()->to('/admin');
     }
 
     //Cerrar Sesion
