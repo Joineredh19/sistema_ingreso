@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Register;
 use App\Http\Controllers\Sessions;
 use  App\Http\Controllers\PersonalController;
+use  App\Http\Controllers\PersonalsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,17 +22,19 @@ Route::get('/', function () {
 });
 
 Route::get('/inicio', function () {
-    return view('indexx');
+    return view('admin.index');
 });
+
 
 Route::get('/personals', function () {
     return view('personal.create');
 });
 
-Route::post('personals',[PersonalController::class,'create']);
-Route::resource('personals', PersonalController::class);
+Route::post('personals',[PersonalsController::class,'create']);
+Route::resource('personals', PersonalsController::class);
 
 
+//Rutas Login y Registro
 Route::get('/register',[Register::class,'create'])
 -> name('register.index');
 

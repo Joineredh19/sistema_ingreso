@@ -13,13 +13,15 @@ class CreatePersonalsTable extends Migration
      */
     public function up()
     {
-        Schema::create('personal', function (Blueprint $table) {
+        Schema::create('personals', function (Blueprint $table) {
             $table->id();
-            $table->string('Documento');
-            $table->string("Nombre");
-            $table->string("Apellido");
-            $table->string("Correo");
-            $table->string("Foto");
+            $table->string('T_identificacion',20);
+            $table->integer('N_identificacion');
+            $table->string('Nombre',10);
+            $table->string('Apellido',15);
+            $table->string('Correo',25);
+            $table->integer('Telefono');
+            $table->string('Cargo',15);
             $table->timestamps();
         });
     }
