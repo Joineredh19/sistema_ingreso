@@ -3,44 +3,48 @@
 @section('title', 'Añadir Personal')
 
 @section('content')
-
-
 <form class="row g-3">
-    @csrf
-    <select class="form-select" aria-label="Default select example">
-        <option selected>Tipo de Documento</option>
-        <option value="1">TI</option>
-        <option value="2">CC</option>
-        <option value="3">CE</option>
-      </select>
     <div class="col-md-6">
-        <label for="inputid" class="form-label">Nº Identificacion</label>
-        <input type="number" class="form-control" id="inputid" placeholder="Número de identificación...">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
       </div>
-    <div class="col-md-6">
-      <label for="inputNombre" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
     </div>
     <div class="col-12">
-      <label for="inputApellido" class="form-label">Apellido</label>
-      <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
-    </div>
-    <div class="col-12">
-      <label for="inputCorreo" class="form-label">Correo</label>
-      <input type="text" class="form-control" id="inputCorreo" placeholder="Correo">
-    </div>
-    <div class="col-md-6">
-      <label for="inputTelefono" class="form-label">Telefono</label>
-      <input type="number" class="form-control" id="inputTelefono">
-    </div>
-    <select class="form-select" aria-label="Default select example">
-        <option selected>Cargo</option>
-        <option value="1">Aprendiz</option>
-        <option value="2">Instructor</option>
-        <option value="3">Otro</option>
-      </select>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Guardar</button>
+      <button type="submit" class="btn btn-primary">Sign in</button>
     </div>
   </form>
 
