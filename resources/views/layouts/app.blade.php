@@ -10,21 +10,22 @@
       <link rel="stylesheet" href="/css/material-design-iconic-font.min.css">
       <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.css">
       <link rel="stylesheet" href="/css/main.css">
-      <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+      <link href="css/reloj.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="/js/jquery-1.11.2.min.js"><\/script>')</script>
       <script src=" /js/material.min.js" ></script>
       <script src=" /js/sweetalert2.min.js" ></script>
       <script src=" /js/jquery.mCustomScrollbar.concat.min.js " ></script>
       <script src=" /js/main.js" ></script>
+      <script src="js/reloj.js"></script>
     <title>@yield('title') - Laravel App</title>
 
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
   </head>
-  <body class="bg-gray-100 text-gray-800">
+  <body class="bg-gray-100 text-gray-800"   onload="mostrarReloj()">
     <nav class="flex py-5 bg-indigo-500 text-white">
         <!-- Navbar content -->
         <div class="w-1/2 px-12 mr-auto">

@@ -38,7 +38,7 @@
 
 </head>
 
-
+@yield('content')
 <body class="hold-transition skin-blue sidebar-mini">
        <!-- HEADER DESKTOP-->
 
@@ -252,9 +252,11 @@
             </div>
         </header>
     <!-- MAIN CONTENT-->
-    @yield('content')
+@yield('create')
         </div>
+
     </div>
+
     <!-- END MAIN CONTENT-->
     <!-- END PAGE CONTAINER-->
 </div>

@@ -21,6 +21,13 @@
 
           <button type="submit" class="btn mt-3">Ingreso</button>
       </form>
+      <div id='reloj'>
+        <div class='reloj-contenedor' id='contenedor'>
+            <div id='hora'>Reloj Digital</div>
+            <div id='fecha'>con javaSript </div>
+        </div>
+
+     </div>
 
     </div>
 

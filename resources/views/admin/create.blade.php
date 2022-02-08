@@ -2,9 +2,9 @@
 
 @section('title', 'Añadir Personal')
 
-@section('content')
-<form class="row g-3">
-    <div class="col-md-6">
+@section('create')
+<form class="row g-6">
+    <div class="col-md-4">
       <label for="inputEmail4" class="form-label">Email</label>
       <input type="email" class="form-control" id="inputEmail4">
     </div>

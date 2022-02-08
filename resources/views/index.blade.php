@@ -15,7 +15,7 @@
       <script src=" /js/main.js" ></script>
 
   </head>
-  
+
   <body>
     <div class="wrapper">
       <div class="logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/1045px-Sena_Colombia_logo.svg.png" alt=""> </div>
@@ -23,7 +23,7 @@
       <div class="text-center mt-4 name"> Sistema Ingreso </div>
       &nbsp&nbsp
       <form class="p-3 mt-3">
-          <div class="form-field d-flex align-items-center"> 
+          <div class="form-field d-flex align-items-center">
             <div class="form-group">
               <select class="selectpicker show-tick" name="status">
                 <option value="in">Hora de Entrada</option>
@@ -31,8 +31,8 @@
               </select>
             </div>
           </div>
-          <div class="form-field d-flex align-items-center"> 
-            <span class="fas fa-key"></span> 
+          <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
             <input type="password" name="ide" id="ide" placeholder=" ID de Empleado">
           </div>
           <button class="btn mt-3">Ingreso</button>
@@ -55,10 +55,10 @@
       $(function() {
         var interval = setInterval(function() {
           var momentNow = moment();
-          $('#date').html(momentNow.format('dddd').substring(0,3).toUpperCase() + ' - ' + momentNow.format('MMMM DD, YYYY'));  
+          $('#date').html(momentNow.format('dddd').substring(0,3).toUpperCase() + ' - ' + momentNow.format('MMMM DD, YYYY'));
           $('#time').html(momentNow.format('hh:mm:ss A'));
         }, 100);}
-        
-</script>      
+
+</script>
   </body>
 </html>
