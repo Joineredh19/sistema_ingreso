@@ -41,6 +41,19 @@ class PersonalsController extends Controller
     public function store(Request $request)
     {
         //
+            $personal = new Personals();
+
+            $personal -> T_identificacion=$request->get('Tdocumento');
+            $personal -> N_identificacion=$request->get('Ndocumento');
+            $personal -> Nombre=$request->get('Nombre');
+            $personal -> Apellido=$request->get('Apellido');
+            $personal -> Correo=$request->get('Correo');
+            $personal -> Telefono=$request->get('Telefono');
+            $personal -> Cargo=$request->get('Cargo');
+
+            $personal->save();
+
+            return redirect('/admin/create');
     }
 
     /**
