@@ -7,12 +7,12 @@ const mostrarReloj=()=>{
 
     const meses =['Enero' , 'Febrero' ,'Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
    const dias=['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado',];
-   let diaSemana=dias[fecha.getDate()];
+   let diaSemana=dias[fecha.getDay()];
    let dia= fecha.getDate();
    let mes =meses[fecha.getMonth()];
    let fechaText=`${diaSemana},${dia} ${mes}`;
    document.getElementById('fecha').innerHTML= fechaText;
-  
+
    document.getElementById(`contenedor`).classList.toggle('animar');
 
 }

@@ -10,7 +10,7 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>@yield('title') - Laravel App</title>
+    <title>@yield('title') - Ingreso</title>
 
     <!-- Fontfaces CSS-->
 
@@ -105,7 +105,7 @@
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                <i class="fas fa-tachometer-alt"></i>Sena</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             </ul>
                         </li>

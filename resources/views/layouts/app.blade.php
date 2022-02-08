@@ -26,7 +26,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
   </head>
   <body class="bg-gray-100 text-gray-800"   onload="mostrarReloj()">
-    <nav class="flex py-5 bg-indigo-500 text-white">
+    <nav class="flex py-5 bg-ind-500 text-white">
         <!-- Navbar content -->
         <div class="w-1/2 px-12 mr-auto">
             <p class="text-2x1 font-bold">Sistema Ingreso</p>
