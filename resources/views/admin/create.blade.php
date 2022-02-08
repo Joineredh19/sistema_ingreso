@@ -3,48 +3,55 @@
 @section('title', 'Añadir Personal')
 
 @section('create')
-<form class="row g-6">
+<form class="row g-12">
     <div class="col-md-4">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
+        <label for="inputTdocumento" class="form-label">Tipo Documento</label>
+        <select id="inputTdocumento" class="form-select">
+          <option selected>Seleccione TD</option>
+          <option value="1">TI</option>
+          <option value="2">CC</option>
+          <option value="3">CE</option>
+        </select>
+      </div>
+    <div class="col-md-4">
+      <label for="inputNdocumento" class="form-label">Nº Documento</label>
+      <input type="number" class="form-control" id="inputNdocumento">
     </div>
     <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress" class="form-label">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="col-12">
-      <label for="inputAddress2" class="form-label">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      <label for="inputNombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="inputNombre">
     </div>
     <div class="col-md-6">
-      <label for="inputCity" class="form-label">City</label>
-      <input type="text" class="form-control" id="inputCity">
+      <label for="inputApellido" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
     </div>
-    <div class="col-md-4">
-      <label for="inputState" class="form-label">State</label>
-      <select id="inputState" class="form-select">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
+    <div class="col-md-6">
+      <label for="inputCorreo" class="form-label">Correo</label>
+      <input type="email" class="form-control" id="inputCorreo" placeholder="Ingrese correo...">
     </div>
     <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Check me out
-        </label>
+        <label for="inputTelefono" class="form-label">Telefono</label>
+        <input type="text" class="form-control" id="inputTelefono">
       </div>
+
+    <div class="col-md-2">
+      <label for="inputCargo" class="form-label">Cargo</label>
+      <select id="inputCargo" class="form-select">
+        <option selected>Seleccione Cargo</option>
+        <option value="1">Instructor</option>
+        <option value="2">Aprendiz</option>
+        <option value="3">Otro</option>
+      </select>
     </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Sign in</button>
+
+
+    <div class="col-6">
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+    <div class="col-6">
+      <button class="btn btn-danger">
+        <a href="{{route ('admin.index')}}">Cancelar</a>
+      </button>
     </div>
   </form>
 
